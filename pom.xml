@@ -8,9 +8,20 @@
     <artifactId>Lab1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId> maven-jar-plugin</artifactId>
+
+           <configuration>
+               <archive>
+                   <manifestFile>src/main/resources/Manifest.MF</manifestFile>
+               </archive>
+           </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 </project>
