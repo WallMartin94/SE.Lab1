@@ -8,7 +8,7 @@ class PersonTest {
         private int age;
         private String name;
         private int ageExpected;
-                private String nameExpected;
+        private String nameExpected;
 
         private Person person = new Person("Hans",2);
     @Test
@@ -21,7 +21,7 @@ class PersonTest {
 
     @Test
     void setAge() {
-        System.out.println("SetAge");
+        System.out.println("Setge");
         ageExpected=2;
         Assertions.assertEquals(ageExpected,person.getAge());
 
