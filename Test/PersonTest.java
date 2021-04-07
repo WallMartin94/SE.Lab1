@@ -35,7 +35,7 @@ class PersonTest {
         System.out.println("GetName");
 
 
-        nameExpected="Patrik";
+        nameExpected="Hans";
         Assertions.assertEquals(nameExpected,person.getName());
 
 
